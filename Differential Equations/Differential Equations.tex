@@ -1,0 +1,469 @@
+\documentclass[hidelinks, a4paper, 12pt]{article}
+\usepackage[linktoc=all]{hyperref}
+\usepackage{apacite}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+% \makeatletter
+% \renewcommand{\@dotsep}{10000} 
+% \makeatother
+
+\hypersetup{
+    pdftitle={Pure Mathematics III: Differential Equations},
+    pdfauthor={Wilson Wongso},
+    pdfpagemode=UseOutlines,
+}
+
+\title{Pure Mathematics III: Differential Equations}
+\author{Based on lectures by Danilo J. Alcordo \\ Notes taken by Wilson Wongso}
+\date{Junior College 2 - Academic Year 2018/2019}
+
+\setcounter{section}{-1}
+\setcounter{tocdepth}{2}
+
+\begin{document}
+
+    \maketitle
+    
+    \tableofcontents
+
+    \section{Preface}
+        The following lecture notes are mostly based on textbook \cite{neill2016cambridge} questions and past-paper questions from various years.
+        The author assumes that the readers are able to do different methods of integration, such as indefinite integral, 
+        u-substitution/integration by substitution, integration by parts, and partial fraction decomposition.\\[\baselineskip]
+        These notes only include the key parts of the lectures and the types of problems that often appear in the actual exam.
+        Further reading and past-year papers practice are highly encouraged.
+
+    \section{Definitions}
+        \subsection{Differential Equations in Science}
+        A differential equation is a \textbf{mathematical equation} that relates some \textbf{function}
+        with its \textbf{derivatives}. In applications, the functions usually represent physical quantities,
+        the derivatives represent their rates of change, and the equation defines a relationship
+        between the two. Because such relations are extremely common, differential equations play
+        a prominent role in many disciplines including \textbf{engineering}, \textbf{physics}, 
+        \textbf{economics}, and \textbf{biology}.
+
+        \subsection{Differential Equations in Pure Mathematics}
+        In \textbf{pure mathematics}, differential equations are studied from several different perspectives,
+        mostly concerned with their solutions - the set of functions that satisfy the equation. Only the simplest
+        differential equations are solvable by explicit formulas; however, some properties of solutions of
+        a given differential equation may be determined without finding their exact form.
+    
+    \section{General Solution of a Differential Equation}
+        \subsection{Introduction}
+            A general solution of an nth-order equation is a solution containing n arbitrary independent constants of integration \cite{kreyszig1999advanced}.
+        \subsection{Methods of solving a differential equation}
+            \subsubsection{Separation of independent and dependent variables}
+                A derivative can be separated into its independent and dependent variables.
+                Separating them allows us to turn the differential equation into a form which we know how to solve.
+                For instance,
+                \[\frac{dy}{dx} = f(y) \Leftrightarrow \frac{dx}{dy} = \frac{1}{f(y)} \Leftrightarrow dx = \frac{1}{f(y)}dy \Leftrightarrow x = \int \frac{1}{f(y)}dy\]
+        \subsection{Example problems}
+            Find the general solution of the following differential equation.
+            \subsubsection{Problem 1}
+                \[\frac{dy}{dx} = (3x - 1)(x-3)\]
+                \textbf{Solve by Separating Variables}. Expand the equation.
+                \[\frac{dy}{dx} = 3x^2 - 10x + 3\]
+                Separate the variables with respect to $y$ and with respect to $x$.
+                \[dy = (3x^2 - 10x + 3)dx\]
+                Integrate both sides.
+                \[\int dy = \int (3x^2 - 10x + 3)dx\]
+                Thus, we obtain the general solution:
+                \[y = x^3 - 5x^2 + 3x + k\]
+            \subsubsection{Problem 2}
+                \[\frac{dy}{dt} = sin^2(3t)\]\\
+                Separate the variables with respect to $y$ and with respect to $t$.
+                \[dy = sin^2(3t)dt\]
+                Integrate both sides.
+                \[\int dy = \int sin^2(3t)dt\]
+                Substitute $u = 3t$.
+                \[Let: u = 3t\]
+                \[du = 3dt\]
+                \[dt = \frac{1}{3} du\]
+                Obtaining:
+                \[\int dy = \frac{1}{3}\int sin^2(u)du\]\\
+                Use the trigonometric identity $2sin^2(\theta) \equiv 1 - cos(2\theta)$ to get:
+                \[\int dy = \frac{1}{3}\int \frac{1}{2}(1-cos(2u))du\]
+                \[\int dy = \frac{1}{6}\int (1-cos(2u))du\]
+                \[\int dy = \frac{1}{6}\int du -\frac{1}{6}\int cos(2u)du\]
+                Substitute $v = 2u$.
+                \[Let: v = 2u\]
+                \[dv = 2du\]
+                \[du = \frac{1}{2} dv\]
+                Obtaining:
+                \[\int dy = \frac{1}{6}\int du -\frac{1}{12}\int cos(v)dv\]
+                \[y = \frac{1}{6}u - \frac{1}{12}sin(v) + k\]
+                Substitute back the variables $u$ and $v$ into $t$ accordingly:
+                \[y = \frac{1}{6}3t - \frac{1}{12}sin(2*3t) + k\]
+                Finally obtaining:
+                \[y = \frac{1}{2}t - \frac{1}{12}sin(6t) + k\]
+                as our general solution.
+    \section{Particular Solution of a Differential Equation}    
+        \subsection{Introduction}
+            A particular solution is derived from the general solution by setting the constants to particular values, often chosen to fulfill set 'initial conditions or boundary conditions' \cite{kreyszig1999advanced}.
+        \subsection{Example Problems}
+            Solve the following differential equations with the given initial conditions.
+            \subsubsection{Problem 1}
+                \[\frac{dx}{dt} = 2e^{0.4t},\]
+                $x = 1$ when $t = 0$\\[\baselineskip]
+                \textbf{Solution}
+                \[\frac{dx}{dt} = 2e^{0.4t}\]
+                Separate the variables.
+                \[dx = 2e^{0.4t}dt\]
+                Integrate.
+                \[\int dx = 2\int e^{0.4t}dt\]
+                \[x = \frac{2}{0.4}e^{0.4t} + k\]
+                Obtaining: 
+                \[x = 5e^{0.4t} + k\]
+                Then, we know $x = 1$ when $t = 0$, so we plug those values into the general solution:
+                \[1 = 5e^{0} + k\]
+                \[1 = 5 + k\]
+                To get the actual value of $k$:
+                \[k = -4\]
+                Replace $k$ in the general solution with the previous value, to get:
+                \[x = 5e^{0.4t} - 4\]
+                as our particular solution.
+            \subsubsection{Problem 2}
+                \[(1-t^2)\frac{dy}{dt} = 2t,\]
+                $y = 0$ when $t = 0$, for $-1 < t < 1$\\[\baselineskip]
+                \textbf{Solution}
+                \[(1-t^2)\frac{dy}{dt} = 2t\]
+                Separate the variables.
+                \[dy = \frac{2t}{1-t^2}dt\]
+                \[\int dy = \int \frac{2t}{1-t^2}dt\]
+                There are multiple approaches to this integral, the longer method being \textbf{partial fraction decomposition}:\\[\baselineskip]
+                \textbf{Method 1: Partial Fraction Decomposition}
+                    \[\frac{2t}{1-t^2} \equiv \frac{2t}{(1+t)(1-t)}\]
+                    which we can transform to the form:
+                    \begin{equation}
+                        \frac{2t}{(1+t)(1-t)} = \frac{A}{1+t} + \frac{B}{1-t}
+                    \end{equation}
+                    To get the values of $A$ and $B$, we first need to select one of the denominators and set it equal to zero:
+                    \begin{equation}
+                        1+t = 0   
+                    \end{equation}
+                    \begin{equation}
+                        \Rightarrow t = -1
+                    \end{equation}
+                    Then, multiply both sides of equation $(1)$ by the selected denominator:
+                    \[\frac{2t}{1-t} = A + \frac{B(1+t)}{1-t}\]
+                    Since we set $1+t = 0$ from equation $(2)$, we get:
+                    \begin{equation}
+                        \frac{2t}{1-t} = A
+                    \end{equation}
+                    Lastly, we use the value of $t$ from equation $(3)$ into $(4)$:
+                    \[\frac{2(-1)}{1-(-1)} = A\]
+                    And finally:
+                    \[A = -1\]
+                    Repeat the same process with a different denominator to obtain the value of $B$, such that:
+                    \[B = 1\]
+                    With the values of $A$ and $B$, we can finally return to our integration, which is now of the form:
+                    \[\int dy = \int \frac{1}{1-t} - \frac{1}{1+t}dt\]
+                    \[\int dy = \int \frac{1}{1-t}dt - \int \frac{1}{1+t}dt\]
+                    Then integrate,
+                    \[y = -ln|1-t| - ln|1+t| + k\]
+                    \[y = -(ln|1-t| + ln|1+t|) + k\]
+                    Obtaining:
+                    \[y = -(ln|1-t^2|) + k\]
+                    as our general solution.\\[2\baselineskip]
+                \textbf{Method 2: U-Substitution}
+                    \[\int dy = \int \frac{2t}{1-t^2}dt\]
+                    \[Let: u = 1-t^2\]
+                    \[du = -2tdt\]
+                    \[-du = 2tdt\]
+                    \textbf{Notice}: $2tdt$ is the numerator of our fraction in the right hand side, hence:
+                    \[\int dy = -\int \frac{1}{u}du\]
+                    \[y = -ln|u| + k\]
+                    As a result, we get:
+                    \[y = -ln|1-t^2| + k\]
+                    as our general solution.\\[2\baselineskip]
+                    \textbf{Note:} Both approaches works, but not everyone might notice the u-substitution that
+                    can make the integral much simpler, thus the author would like to show both methods.\\[2\baselineskip] 
+                \textbf{Finding the particular solution:}
+                    \[y = -ln|1-t^2| + k\]
+                    We know $y = 0$ when $t = 0$,
+                    \[0 = -ln|1-0| + k\]
+                    \[0 = -ln(1) + k\]
+                    \[0 = 0 + k\]
+                    \[k = 0\]
+                    Lastly, we just need to replace $k$ with its value, to find:
+                    \[y = -ln|1-t^2|\]
+                    as our particular solution.
+    \section{Differential Equations as Essay Problems}
+        Normally, some differential equations come in the form of an essay or story-like problem. So, in addition
+        to solving the equation, we need to firstly, come up with the correct differential equation, according to
+        what the essay tells us.
+        \subsection{Example Problems}
+            \subsubsection{Problem 1}
+                In starting from rest, the driver of an electric car depresses the throttle gradually. If the speed
+                of the car after $t$ seconds is $v$ $ms^{-1}$, the acceleration $\frac{dv}{dt}$ (in metre-second units)
+                is given by $0.2t$. How long does it take for the car to reach a speed of $20$ $ms^{-1}$?\\[\baselineskip]
+                \textbf{Solution}\\
+                    In order to answer the last section of the problem, we need to find out the relationship between quantities $v$
+                    and $t$, or a function $v$ dependent on $t$.
+                    \[v(t)\]
+                    To find that, we need to solve a differential equation. In this case, the problem explicitly gives us the differential equation it requires:
+                    \[\frac{dv}{dt} = 0.2t\]
+                    However, there is actually an implicit initial condition that the problem also gives.
+                    The problems states "starting from rest," which we can imply that in \textbf{rest} the car does not
+                    move and that moment is the starting time of when we take the quantity $t$. Hence:
+                    \[v = 0\] when \[t = 0\]
+                    Now, we can finally solve the differential equation and find its particular solution!
+                    \[\frac{dv}{dt} = 0.2t\]
+                    \[dv = 0.2tdt\]
+                    Integrate: 
+                    \[\int dv = 0.2\int tdt\]
+                    \[v = \frac{0.2}{2}t^2 + k\]
+                    General Solution:
+                    \[v = 0.1t^2 + k\]
+                    Use the initial conditions $v = 0$ and $t = 0$:
+                    \[0 = 0 + k\]
+                    \[k = 0\]
+                    Hence, the particular solution:
+                    \begin{equation}
+                        v = 0.1t^2
+                    \end{equation}
+                    Some students stop here, but what the question also requires us to answer is the time it takes
+                    for the car to reach a speed of $20$ $ms^{-1}$. We can transform equation $(5)$ where the dependent variable is now $v$:
+                    \[t = \sqrt{10v}\]
+                    Now to obtain the last mark, we need to find $t$ at $v=20$ $ms^{-1}$:
+                    \[t = \sqrt{10*20}\]
+                    \[t = \sqrt{200}\]
+                    And finally get:
+                    \[t \approx 14.1s\]
+                    as our final answer.
+            \subsubsection{Problem 2}
+                The solution curve for a differential equation of the form $\frac{dy}{dx} = x - \frac{a}{x^2}$ for $x > 0$,
+                passes through the points $(1, 0)$ and $(2, 0)$. Find the value of $y$ when $x = 3$.\\[\baselineskip]
+                \textbf{Solution}\\
+                Like \textbf{4.1.1 Problem 1}, the problem gives the differential equation explicitly. However, it now involves a constant $a$
+                and later $k$, the constant of integration.
+                \[\frac{dy}{dx} = x - \frac{a}{x^2}\]
+                Separate the variables:
+                \[dy = x - \frac{a}{x^2}dx\]
+                Integrate:
+                \[\int dy = \int x - \frac{a}{x^2}dx\]
+                \[\int dy = \int xdx -a \int \frac{1}{x^2}dx\]
+                General Solution:
+                \begin{equation}
+                    y = \frac{1}{2}x^2 + \frac{a}{x} + k   
+                \end{equation}
+                Notice how the number of initial conditions given is the same as the number of constants in our general solution. This calls
+                for a system of linear equation of two variables, which we can solve using methods such as substitution or elimination. The two 
+                given points are:
+                \[(1, 0)\] and \[(2, 0)\]
+                At point $(1, 0)$ equation $(6)$ yields:
+                \begin{equation}
+                    0 = \frac{1}{2} + a + k
+                \end{equation}
+                At point $(2, 0)$ equation $(6)$ yields:
+                \begin{equation}
+                    0 = 2 + \frac{a}{2} + k
+                \end{equation}
+                From equation $(8)$, we can multiply both sides by $2$ and get the expression:
+                \[0 = 4 + a + 2k\]
+                \begin{equation}
+                    a = -4 -2k
+                \end{equation}
+                Using $(9)$, we can substitute $a$ in $(7)$ to find the value of $k$:
+                \[0 = \frac{1}{2} - 4 - k\]
+                \[k = -\frac{7}{2}\]
+                and substituting the value of $k$ into $(9)$ yields:
+                \[a = 3\]
+                With both values of the constants obtained, we can finally find the particular solution:
+                \[y = \frac{1}{2}x^2 + \frac{3}{x} - \frac{7}{2}\]
+                However, the problem also requires us to find the value of $y$ when $x = 3$,
+                \[y = \frac{1}{2}3^2 + \frac{3}{3} - \frac{7}{2}\]
+                Thus as the final answer:
+                \[y = 2\]
+            \subsubsection{Problem 3}
+                A girl lives 500 metres from school. She sets out walking at 2$ms^{-1}$, but when she has
+                walked a distance of $x$ metres, her speed has dropped to $(2 - \frac{1}{400}x) ms^{-1}$.
+                How long does she take to get to school?\\[\baselineskip]
+                \textbf{Solution}\\
+                Unlike the two previous problems, now we don't explicitly get the differential equation.
+                But, we can indeed infer from the problem. The quantity \textbf{speed}, as we know from Physics,
+                is just the change in \textbf{distance} over \textbf{time}. Thus, we can say that speed is equivalent
+                to $\frac{dx}{dt}$ or sometimes denoted by $\dot{x}$ in Physics. Therefore initially:
+                \[\frac{dx}{dt} = 2\]
+                But as the problem tells us, it dropped to:
+                \[\frac{dx}{dt} = 2 - \frac{1}{400}x\]
+                We can now solve the differential equation. Firstly, make the expression on the right hand side into one fraction:
+                \[\frac{dx}{dt} = \frac{800-x}{400}\]
+                Separate the variables:
+                \[\frac{1}{800-x}dx = \frac{1}{400}dt\]
+                Integrate:
+                \[\int \frac{1}{800-x}dx = \frac{1}{400}\int dt\]
+                General Solution:
+                \[-ln|800-x| = \frac{1}{400}t + k\]
+                Now you might be wondering on how we can find the value of $k$, but the problem implies two things; 
+                that before the girl started walking (at rest) $t = 0$, and distance $x$ is of course $0$,
+                because she hasn't started walking towards school. With that, we get:
+                \[x = 0\] when \[t = 0\]
+                Thus:
+                \[-ln|800| = 0 + k\]
+                \[k = -ln(800)\]
+                Substituting the value of $k$ into the general solution, yields:
+                \[-ln|800-x| = \frac{1}{400}t -ln(800)\]
+                as our particular solution.
+                Yet as usual, the problem doesn't end there. It is asking for the duration it takes for the girl to reach school.
+                From the first sentence of the problem, we know that the distance $x$ the girl will travel to school is 500m. Hence
+                at $x = 500$:
+                \[-ln(800-500) = \frac{1}{400}t -ln(800)\]
+                \[-ln(300) = \frac{1}{400}t -ln(800)\]
+                \[ln(800)-ln(300) = \frac{1}{400}t\]
+                \[ln\left(\frac{800}{300}\right) = \frac{1}{400}t\]
+                \[t = 400ln\left(\frac{8}{3}\right)\]
+                And finally obtain:
+                \[t \approx 392.33s \approx 6.5min\]
+    \section{Past Paper Questions}
+        \subsection{Problem 1}
+            A biologist is investigating the spread of a weed in a particular region. At time $t$ weeks after the start of
+            the investigation, the area covered by the weed is $A$ $m^2$. The biologist claims that the rate of increase of $A$
+            is proportional to $\sqrt{(2A-5)}$.\\[\baselineskip]
+            \textbf{i)} Write down a differential equation representing the biologist's claim. \textbf{[1]}\\[\baselineskip]
+            \textbf{ii)} At the start of the investigation, the area covered by the weed was $7$ $m^2$ and, 10 weeks later, the
+            area covered was $27$ $m^2$. Assuming that the biologist's claim is correct, find the area covered 20 weeks after the
+            start of the investigation. \textbf{[9]}\\[\baselineskip]
+            Before we solve, we need to know more about proportionality. For example, in Physics, Hooke's Law tells us that the force 
+            needed to extend or compress a spring by some distance $x$ scales linearly or proportionally with respect to that distance.
+            This relation is represented by:    
+            \[F_{s} = kx\]
+            where $F_{s}:$ spring force; $k:$ spring constant; $x:$ spring stretch or compression\\[\baselineskip]   
+            \textbf{Note: }If a rate of change is proportional to a certain quantity, then there exists a constant that can represent
+            the proportionality between the two quantities.\\[\baselineskip]
+            \textbf{Note: }If the rate is increasing proportionally, the constant is positive. While if the rate is decreasing proportionally,
+            the constant is negative.\\[\baselineskip]
+            \textbf{Solution}\\[\baselineskip]
+            \textbf{i)} $\frac{dA}{dt} = k\sqrt{(2A-5)}$\\[\baselineskip]
+            \textbf{ii)} Separate the variables:
+            \[\frac{1}{\sqrt{2A-5}}dA = kdt\]
+            Integrate both sides:
+            \begin{equation}
+                \int \frac{1}{\sqrt{2A-5}}dA = k\int dt   
+            \end{equation}
+            Use the substitution $u = 2A-5$:
+            \[Let: u = 2A - 5\]
+            \[du = 2dA\]
+            \[dA = \frac{1}{2}du\]
+            Hence equation $(10)$ turns into:
+            \[\frac{1}{2}\int \frac{1}{\sqrt{u}}du = k\int dt\]
+            \[\frac{1}{2}\int u^{-1/2}du = k\int dt\]
+            \[u^{1/2} = kt + c\]
+            \[\sqrt{u} = kt + c\]
+            Substitute $u$ back into $2A-5$ yields the general solution:
+            \begin{equation}
+                \sqrt{2A-5} = kt + c
+            \end{equation}
+            Like previously, we need to find 2 sets of initial conditions because of the 2 unknown constants present in our general solution.
+            We know from section \textbf{(ii)}, that at the start, the area covered by the weed was 7$m^2$. Thus:
+            \[A = 7\] when \[t = 0\]
+            With that, we can substitute them into equation $(11)$ to obtain the value of $c$:
+            \[\sqrt{14-5} = c\]
+            \[\sqrt{9} = c\]
+            \[c = 3\]
+            Yielding the equation:
+            \begin{equation}
+                \sqrt{2A-5} = kt + 3
+            \end{equation}
+            Lastly to find $k$, section \textbf{(ii)} also tells us that at $t = 10$, $A = 27$. Substituting them into equation $(12)$ gives:
+            \[\sqrt{54-5} = 10k + 3\]
+            \[\sqrt{49} = 10k + 3\]
+            \[4 = 10k\]
+            \[k = \frac{2}{5}\]
+            Finally, we have:
+            \[\sqrt{2A-5} = \frac{2}{5}t + 3\]
+            \[2A-5 = {\left(\frac{2}{5}t + 3\right)}^2\]
+            \[2A = {\left(\frac{2}{5}t + 3\right)}^2 + 5\]
+            \[A = \frac{1}{2}{\left(\frac{2}{5}t + 3\right)}^2 + \frac{5}{2}\]
+            as our particular solution.\\[\baselineskip]
+            To completely answer the problem, we need to find the value of $A$ at $t = 20$:
+            \[A = \frac{1}{2}{\left(\frac{2}{5}20 + 3\right)}^2 + \frac{5}{2}\]
+            \[A = \frac{121}{2}+ \frac{5}{2}\]
+            \[A = \frac{126}{2}\]
+            \[A = 63\]
+            Hence we get $A = 63$ as our final answer for section \textbf{(ii)}.
+        \subsection{Problem 2}
+            The number of organisms in a population of time $t$ is denoted by $x$. Treating $x$ as
+            a continuous variable, the differential equation satisfied by $x$ and $t$ is $\frac{dx}{dt}=\frac{xe^{-t}}{k+e^{-t}}$, where $k$ is a
+            positive constant.\\[\baselineskip]
+            \textbf{i)} Given that $x = 10$ when $t = 0$, solve the differential equation, obtaining a relation between $x$, $k$ and $t$. \textbf{[6]}\\[\baselineskip]
+            \textbf{ii)} Given also that $x = 20$ when $t = 1$, show that $k = 1 - \frac{2}{e}$. \textbf{[2]}\\[\baselineskip]
+            \textbf{iii)} Show that the number of organisms never reaches 48, however large $t$ becomes. \textbf{[2]}\\[\baselineskip]
+            \textbf{Solution}\\[\baselineskip]
+            \textbf{i)} Given the differential equation:
+            \[\frac{dx}{dt}=\frac{xe^{-t}}{k+e^{-t}}\]
+            Separate the variables:
+            \[\frac{1}{x}dx=\frac{e^{-t}}{k+e^{-t}}dt\]
+            Integrate both sides:
+            \begin{equation}
+                \int \frac{1}{x}dx=\int \frac{e^{-t}}{k+e^{-t}}dt
+            \end{equation}
+            Use the substitution $u = k + e^{-t}$:
+            \[Let: u = k + e^{-t}\]
+            \[du = -e^{-t}\]
+            \[-du = e^{-t}\]
+            \textbf{Notice}: Numerator $e^{-t}dt = -du$.\\
+            Apply the substitution into $(13)$:
+            \[\int \frac{1}{x}dx=-\int \frac{1}{u}du\]
+            \[ln|x| = -ln|u| + c\]
+            Substitute $u$ back into $k + e^{-t}$ to get the general solution:
+            \[ln|x| = -ln|k + e^{-t}| + c\]
+            From section \textbf{(i)}, we know that $x = 10$ when $t = 0$, so after substitution:
+            \[ln(10) = -ln|k+e^0| + c\]
+            \[ln(10) = -ln|k+1| + c\]
+            \[c = ln(10) + ln|k+1|\]
+            \[c = ln|10k + 10|\]
+            Hence, we get:
+            \[ln|x| = -ln|k + e^{-t}| + ln|10k + 10|\]
+            \[ln|x| = ln|\frac{10k+10}{k + e^{-t}}|\]
+            \begin{equation}
+                x = \frac{10k+10}{k + e^{-t}}
+            \end{equation}
+            As the relation between $x$, $k$, and $t$.\\[\baselineskip]
+            \textbf{ii)} With the relation we just obtained, we can substitute the initial conditions $x = 20$ when $t = 1$ into equation $(14)$:
+            \[x = \frac{10k+10}{k + e^{-t}}\]
+            \[20 = \frac{10k+10}{k + e^{-1}}\]
+            \[20(k + e^{-1}) = 10k+10\]
+            \[20k + 20e^{-1} = 10k+10\]
+            \[10k = 10 - 20e^{-1}\]
+            \[k = 1 - 2e^{-1}\]
+            \[k = 1 - \frac{2}{e}\]
+            which is exactly as what the question required us to show.\\[\baselineskip]
+            \textbf{iii)} We can prove that $x$ will never reach 48, by a few methods:\\[\baselineskip]
+            \textbf{Method 1: Using a large value for $t$}\\[\baselineskip]
+            Firstly, we need to evaluate the value of $k$:
+            \[k = 1 - \frac{2}{e}\]
+            \[k \approx0.264\]
+            Then, set $t = 1000$ (or any arbitrarily large value):
+            \[t = 1000\] 
+            Lastly, substitute those values into equation $(14)$:
+            \[x = \frac{10(0.264)+10}{(0.264) + e^{-1000}}\]
+            Obtaining:
+            \[x \approx 47.8\]
+            Thus:
+            \[x < 48\]
+            \textbf{Method 2: Evaluate $\lim_{t\to\infty}$ of equation (14)}\\[\baselineskip]
+            Similar to \textbf{Method 1}, we need to evaluate the value of $k$ and substitute into $(14)$:
+            \[k \approx0.264\]
+            \[x = \frac{10(0.264)+10}{(0.264) + e^{-t}}\]
+            Then find the limit as $t$ approaches $\infty$:
+            \[\lim_{t\to\infty} \left(x = \frac{10(0.264)+10}{0.264 + e^{-t}}\right)\]
+            \[x = \lim_{t\to\infty}\left(\frac{10(0.264)+10}{0.264 + e^{-t}}\right)\]
+            The only quantity that relies on $t$ is $e^{-t}$, hence the limit is only required to be evaluated there:
+            \[x = \frac{10(0.264)+10}{0.264 + \lim_{t\to\infty}e^{-t}}\]
+            As we know:
+            \[\lim_{t\to\infty}e^{-t}\]
+            \[\Rightarrow \lim_{t\to\infty}\frac{1}{e^t}\]
+            \[=0\]
+            Therefore:
+            \[x = \frac{10(0.264)+10}{0.264 + 0}\]
+            \[x \approx 47.8\]
+            And:
+            \[x < 48,\]
+            which implies that $x$ will never reach 48 however large $t$ becomes.
+    \bibliographystyle{apacite}
+    \bibliography{References}
+    
+\end{document}
