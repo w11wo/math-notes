@@ -1,0 +1,30 @@
+\contentsline {section}{\numberline {0}Preface}{1}{section.0}% 
+\contentsline {section}{\numberline {1}Increasing and Decreasing Functions}{2}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Relation with Derivatives}{2}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Example Problems}{2}{subsection.1.2}% 
+\contentsline {subsubsection}{\numberline {1.2.1}Problem 1}{2}{subsubsection.1.2.1}% 
+\contentsline {subsubsection}{\numberline {1.2.2}Problem 2}{3}{subsubsection.1.2.2}% 
+\contentsline {section}{\numberline {2}Higher Order Derivatives}{7}{section.2}% 
+\contentsline {section}{\numberline {3}Minimum and Maximum Points}{8}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Definitions}{8}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Finding Minimum and Maximum Points}{8}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Stationary Points}{9}{subsection.3.3}% 
+\contentsline {subsubsection}{\numberline {3.3.1}Nature of a Stationary Point}{9}{subsubsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.4}Example Problems}{9}{subsection.3.4}% 
+\contentsline {subsubsection}{\numberline {3.4.1}Problem 1}{9}{subsubsection.3.4.1}% 
+\contentsline {subsubsection}{\numberline {3.4.2}Problem 2}{10}{subsubsection.3.4.2}% 
+\contentsline {section}{\numberline {4}Past Paper Questions}{17}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Problem 1}{17}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Problem 2}{19}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}Problem 3}{22}{subsection.4.3}% 
+\contentsline {section}{\numberline {5}Derivatives as Rates of Change}{23}{section.5}% 
+\contentsline {subsection}{\numberline {5.1}Definitions}{23}{subsection.5.1}% 
+\contentsline {subsection}{\numberline {5.2}Example Problems}{23}{subsection.5.2}% 
+\contentsline {subsubsection}{\numberline {5.2.1}Problem 1}{23}{subsubsection.5.2.1}% 
+\contentsline {subsubsection}{\numberline {5.2.2}Problem 2}{23}{subsubsection.5.2.2}% 
+\contentsline {subsubsection}{\numberline {5.2.3}Problem 3}{25}{subsubsection.5.2.3}% 
+\contentsline {subsubsection}{\numberline {5.2.4}Problem 4}{25}{subsubsection.5.2.4}% 
+\contentsline {subsubsection}{\numberline {5.2.5}Problem 5}{26}{subsubsection.5.2.5}% 
+\contentsline {subsubsection}{\numberline {5.2.6}Problem 6}{27}{subsubsection.5.2.6}% 
+\contentsline {subsubsection}{\numberline {5.2.7}Problem 7}{28}{subsubsection.5.2.7}% 
+\contentsline {section}{References}{30}{section*.2}% 

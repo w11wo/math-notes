@@ -1,0 +1,60 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Neill%
+, Quadling%
+\BCBL {}\ \BBA {} Gilbey%
+}{%
+Neill%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+neill2016cambridge}
+\APACinsertmetastar {%
+neill2016cambridge}%
+\begin{APACrefauthors}%
+Neill, H.%
+, Quadling, D.%
+\BCBL {}\ \BBA {} Gilbey, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2016}.
+\newblock
+\APACrefbtitle {Cambridge International AS and A Level Mathematics: Pure
+  Mathematics 1 Coursebook} {Cambridge international as and a level
+  mathematics: Pure mathematics 1 coursebook}\ (\BNUM\ v. 1).
+\newblock
+\APACaddressPublisher{}{Cambridge University Press}.
+\newblock
+\begin{APACrefURL} \url{https://books.google.co.id/books?id=OEyeDAAAQBAJ}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Stewart%
+}{%
+Stewart%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+stewart2007calculus}
+\APACinsertmetastar {%
+stewart2007calculus}%
+\begin{APACrefauthors}%
+Stewart, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2007}.
+\newblock
+\APACrefbtitle {Calculus: Early Transcendentals} {Calculus: Early
+  transcendentals}.
+\newblock
+\APACaddressPublisher{}{Cengage Learning}.
+\newblock
+\begin{APACrefURL} \url{https://books.google.co.id/books?id=n8eH2eWDq4oC}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
