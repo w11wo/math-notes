@@ -1,0 +1,35 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Neill%
+, Quadling%
+\BCBL {}\ \BBA {} Gilbey%
+}{%
+Neill%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+neill2016cambridge}
+\APACinsertmetastar {%
+neill2016cambridge}%
+\begin{APACrefauthors}%
+Neill, H.%
+, Quadling, D.%
+\BCBL {}\ \BBA {} Gilbey, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2016}.
+\newblock
+\APACrefbtitle {Cambridge International AS and A Level Mathematics: Pure
+  Mathematics 2 and 3 Revised Edition Coursebook} {Cambridge international as
+  and a level mathematics: Pure mathematics 2 and 3 revised edition
+  coursebook}\ (\BNUM\ v. 2).
+\newblock
+\APACaddressPublisher{}{Cambridge University Press}.
+\newblock
+\begin{APACrefURL} \url{https://books.google.co.id/books?id=Cz2eDAAAQBAJ}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

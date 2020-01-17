@@ -1,0 +1,20 @@
+\contentsline {section}{\numberline {0}Preface}{1}{section.0}% 
+\contentsline {section}{\numberline {1}Chain Rule}{1}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Definition}{1}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Differentiating $(ax+b)^n$}{2}{subsection.1.2}% 
+\contentsline {subsubsection}{\numberline {1.2.1}Using Binomial Theorem}{2}{subsubsection.1.2.1}% 
+\contentsline {subsubsection}{\numberline {1.2.2}Using Chain Rule}{2}{subsubsection.1.2.2}% 
+\contentsline {subsubsection}{\numberline {1.2.3}Generalization using Chain Rule}{3}{subsubsection.1.2.3}% 
+\contentsline {subsubsection}{\numberline {1.2.4}Example Problem}{3}{subsubsection.1.2.4}% 
+\contentsline {section}{\numberline {2}Related Rates of Change}{4}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Introduction}{4}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Example Problems}{4}{subsection.2.2}% 
+\contentsline {subsubsection}{\numberline {2.2.1}Problem 1}{4}{subsubsection.2.2.1}% 
+\contentsline {subsubsection}{\numberline {2.2.2}Problem 2}{5}{subsubsection.2.2.2}% 
+\contentsline {subsubsection}{\numberline {2.2.3}Problem 3}{6}{subsubsection.2.2.3}% 
+\contentsline {subsubsection}{\numberline {2.2.4}Problem 4}{8}{subsubsection.2.2.4}% 
+\contentsline {section}{\numberline {3}Past Paper Questions}{10}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Problem 1}{10}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Problem 2}{13}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Problem 3}{14}{subsection.3.3}% 
+\contentsline {section}{References}{16}{section*.2}% 
