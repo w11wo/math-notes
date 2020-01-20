@@ -1,0 +1,32 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Asfaw%
+\ \protect \BOthers {.}}{%
+Asfaw%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+Qiskit-Textbook}
+\APACinsertmetastar {%
+Qiskit-Textbook}%
+\begin{APACrefauthors}%
+Asfaw, A.%
+, Bello, L.%
+, Ben-Haim, Y.%
+, Bravyi, S.%
+, Capelluto, L.%
+, Vazquez, A\BPBI C.%
+\BDBL {}Wootton., J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {Learn Quantum Computation Using Qiskit.} {Learn quantum
+  computation using qiskit.}
+\newblock
+\begin{APACrefURL} \url{http://community.qiskit.org/textbook} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
