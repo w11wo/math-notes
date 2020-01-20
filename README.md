@@ -1,1 +1,1 @@
-# math-notes
+# study-notes
