@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {0}Preface}{1}{section.0}% 
+\contentsline {section}{\numberline {1}Correlation with Classical Mechanics}{1}{section.1}% 
+\contentsline {section}{\numberline {2}Schr\IeC {\"o}dinger's Equation (in 1-Dimension)}{2}{section.2}% 
+\contentsline {section}{\numberline {3}Wavefunction}{2}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Normalization Condition}{2}{subsection.3.1}% 
+\contentsline {subsubsection}{\numberline {3.1.1}Probability Density Distribution}{2}{subsubsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.2}Wavefunction Collapse}{2}{subsection.3.2}% 
+\contentsline {section}{\numberline {4}Statistics in Quantum Mechanics}{3}{section.4}% 
+\contentsline {section}{\numberline {5}Auxiliary Condition of Schr\IeC {\"o}dinger's Equation}{3}{section.5}% 
+\contentsline {section}{\numberline {6}Preservation of Normalization of Wavefunction}{4}{section.6}% 
+\contentsline {section}{References}{5}{section*.2}% 

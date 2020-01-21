@@ -1,0 +1,26 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Khan%
+}{%
+Khan%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+QM-Schrodinger}
+\APACinsertmetastar {%
+QM-Schrodinger}%
+\begin{APACrefauthors}%
+Khan.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {Introduction to Quantum Mechanics: Schrodinger Equation.}
+  {Introduction to quantum mechanics: Schrodinger equation.}
+\newblock
+\begin{APACrefURL} \url{https://youtu.be/kUm4q0UIpio} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
