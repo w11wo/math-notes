@@ -1,0 +1,26 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Khan%
+}{%
+Khan%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+QM-Heisenberg}
+\APACinsertmetastar {%
+QM-Heisenberg}%
+\begin{APACrefauthors}%
+Khan.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {The Heisenberg Uncertainty Principle: Proof/Explanation.} {The
+  heisenberg uncertainty principle: Proof/explanation.}
+\newblock
+\begin{APACrefURL} \url{https://youtu.be/YIpc4RNhuK4} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

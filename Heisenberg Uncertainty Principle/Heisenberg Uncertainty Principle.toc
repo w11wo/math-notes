@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {0}Preface}{1}{section.0}% 
+\contentsline {section}{\numberline {1}Heisenberg Uncertainty Principle}{1}{section.1}% 
+\contentsline {section}{\numberline {2}Proof of Heisenberg Uncertainty Principle}{1}{section.2}% 
+\contentsline {section}{\numberline {3}Pure Particle and Pure Wave}{3}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Wavefunction of Pure Particle}{3}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Wavefunction of Pure Wave}{3}{subsection.3.2}% 
+\contentsline {section}{\numberline {4}Wavefunction in Position Space and in Momentum Space}{4}{section.4}% 
+\contentsline {section}{\numberline {5}Misconception: Observer Effect}{5}{section.5}% 
+\contentsline {section}{References}{5}{section*.2}% 
