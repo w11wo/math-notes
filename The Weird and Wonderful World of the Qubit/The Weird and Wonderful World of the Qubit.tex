@@ -102,7 +102,7 @@
                 \begin{tabular}{c c}
                 $\braket{0|0} = 1$ & $\thus p_0^z(\ket{0}) = 1$\\
                 \\
-                $\braket{0|1} = 0$ & $\thus p_0^z(\ket{1}) = 1$\\
+                $\braket{0|1} = 0$ & $\thus p_0^z(\ket{1}) = 0$\\
                 \\
                 $\braket{0|+} = \frac{1}{\sqrt{2}}$ & $\thus p_0^z(\ket{+}) = \frac{1}{2}$\\
                \end{tabular}
@@ -121,7 +121,7 @@
             This means, that every inner product we could calculate with $\ket{\tilde{0}}$ is the same as for $\ket{0}$, but multiplied by $-1$.
             \[\begin{split}
                 \braket{a|\tilde{0}} &= -\braket{a|0}\n
-                p^a = (\braket{a|\tilde{0}})^2 &= (\braket{a|0})^2
+                (\braket{a|\tilde{0}})^2 &= (\braket{a|0})^2
             \end{split}\]
             Therefore, there is no observable difference between $\ket{0}$ and $\ket{\tilde{0}}$, which is represents the irrelevance of global phase.\n
             While, if we only multiply one element in the vector, it creates a relative phase which creates an entirely different state.
@@ -349,7 +349,7 @@
             \[\rho = \ket{\psi}\bra{\psi}\]
             States that cannot be represented as pure states are called mixed states. The matrix for these is known as the density matrix, and can be written as a sum over pure states:
             \[\rho = \sum_{j}p_j\ket{\psi_j}\bra{\psi_j}\]
-            These correspond to a point that sits inside thee Bloch sphere.
+            These correspond to a point that sits inside the Bloch sphere.
             \[\braket{X}^2 + \braket{Y}^2 + \braket{Z}^2 \leq 1\]
             and these quantities can be calculated as:
             \[\braket{X} = tr\braket{X_\rho},\]
