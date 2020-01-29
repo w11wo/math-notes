@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex Schrödinger's Equation"] 1579624489 "Schrödinger's Equation.aux" "Schrödinger's Equation.bbl" "Schrödinger's Equation" 1580217966
+["bibtex Schrödinger's Equation"] 1579624489 "Schrödinger's Equation.aux" "Schrödinger's Equation.bbl" "Schrödinger's Equation" 1580276417
   "/usr/local/texlive/2019/texmf-dist/bibtex/bst/apacite/apacite.bst" 1374530685 141073 9d7b79dbf9d91133318126032cff8c27 ""
   "References.bib" 1579616721 208 95619450994cf3951a204f63d41b9e46 ""
-  "Schrödinger's Equation.aux" 1580217966 2294 b6686234987dc71e3226440f57ad0213 "pdflatex"
+  "Schrödinger's Equation.aux" 1580276417 2294 b6686234987dc71e3226440f57ad0213 "pdflatex"
   (generated)
   "Schrödinger's Equation.bbl"
   "Schrödinger's Equation.blg"
-["pdflatex"] 1580217964 "/Users/mac/Desktop/Programming/Notes/LaTeX/Schrödinger's Equation/Schrödinger's Equation.tex" "/Users/mac/Desktop/Programming/Notes/LaTeX/Schrödinger's Equation/Schrödinger's Equation.pdf" "Schrödinger's Equation" 1580217966
-  "/Users/mac/Desktop/Programming/Notes/LaTeX/Schrödinger's Equation/Schrödinger's Equation.aux" 1580217966 2294 b6686234987dc71e3226440f57ad0213 ""
-  "/Users/mac/Desktop/Programming/Notes/LaTeX/Schrödinger's Equation/Schrödinger's Equation.tex" 1580217964 10821 18f60e95a2529f10046f9fbcddb2f2e1 ""
+["pdflatex"] 1580276415 "/Users/mac/Desktop/Programming/Notes/LaTeX/Schrödinger's Equation/Schrödinger's Equation.tex" "/Users/mac/Desktop/Programming/Notes/LaTeX/Schrödinger's Equation/Schrödinger's Equation.pdf" "Schrödinger's Equation" 1580276417
+  "/Users/mac/Desktop/Programming/Notes/LaTeX/Schrödinger's Equation/Schrödinger's Equation.aux" 1580276417 2294 b6686234987dc71e3226440f57ad0213 ""
+  "/Users/mac/Desktop/Programming/Notes/LaTeX/Schrödinger's Equation/Schrödinger's Equation.tex" 1580276415 10819 83fb2e88eb03e8a4f482653218b23d35 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -202,16 +202,16 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1570630629 4259636 b0098f01a38c4239beb89a8c2f6e4d87 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "Schrödinger's Equation.aux" 1580217966 2294 b6686234987dc71e3226440f57ad0213 "pdflatex"
+  "Schrödinger's Equation.aux" 1580276417 2294 b6686234987dc71e3226440f57ad0213 "pdflatex"
   "Schrödinger's Equation.bbl" 1579624489 556 1e96ac2187711acfd6827c71c347f8aa "bibtex Schrödinger's Equation"
-  "Schrödinger's Equation.out" 1580217966 657 7e06343fa32a50723eeef8cd21d09b72 "pdflatex"
-  "Schrödinger's Equation.tex" 1580217964 10821 18f60e95a2529f10046f9fbcddb2f2e1 ""
-  "Schrödinger's Equation.toc" 1580217966 972 6ee3b4772ae4be1dc00f0509b8c7953a "pdflatex"
+  "Schrödinger's Equation.out" 1580276417 657 7e06343fa32a50723eeef8cd21d09b72 "pdflatex"
+  "Schrödinger's Equation.tex" 1580276415 10819 83fb2e88eb03e8a4f482653218b23d35 ""
+  "Schrödinger's Equation.toc" 1580276417 972 6ee3b4772ae4be1dc00f0509b8c7953a "pdflatex"
   (generated)
-  "Schrödinger's Equation.aux"
-  "Schrödinger's Equation.pdf"
-  "/Users/mac/Desktop/Programming/Notes/LaTeX/Schrödinger's Equation/Schrödinger's Equation.log"
   "/Users/mac/Desktop/Programming/Notes/LaTeX/Schrödinger's Equation/Schrödinger's Equation.pdf"
-  "Schrödinger's Equation.toc"
+  "/Users/mac/Desktop/Programming/Notes/LaTeX/Schrödinger's Equation/Schrödinger's Equation.log"
   "Schrödinger's Equation.log"
+  "Schrödinger's Equation.aux"
   "Schrödinger's Equation.out"
+  "Schrödinger's Equation.toc"
+  "Schrödinger's Equation.pdf"

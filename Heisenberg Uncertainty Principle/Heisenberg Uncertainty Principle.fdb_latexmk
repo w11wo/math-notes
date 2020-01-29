@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex Heisenberg Uncertainty Principle"] 1580102756 "Heisenberg Uncertainty Principle.aux" "Heisenberg Uncertainty Principle.bbl" "Heisenberg Uncertainty Principle" 1580102759
+["bibtex Heisenberg Uncertainty Principle"] 1580102756 "Heisenberg Uncertainty Principle.aux" "Heisenberg Uncertainty Principle.bbl" "Heisenberg Uncertainty Principle" 1580276460
   "/usr/local/texlive/2019/texmf-dist/bibtex/bst/apacite/apacite.bst" 1374530685 141073 9d7b79dbf9d91133318126032cff8c27 ""
-  "Heisenberg Uncertainty Principle.aux" 1580102758 2011 5372ad6c901b131272f293ab85993c39 "pdflatex"
+  "Heisenberg Uncertainty Principle.aux" 1580276460 2011 5372ad6c901b131272f293ab85993c39 "pdflatex"
   "References.bib" 1580097898 207 9de543ab244c8c61f59b5a5008075a00 ""
   (generated)
-  "Heisenberg Uncertainty Principle.blg"
   "Heisenberg Uncertainty Principle.bbl"
-["pdflatex"] 1580102756 "/Users/mac/Desktop/Programming/Notes/LaTeX/Heisenberg Uncertainty Principle/Heisenberg Uncertainty Principle.tex" "/Users/mac/Desktop/Programming/Notes/LaTeX/Heisenberg Uncertainty Principle/Heisenberg Uncertainty Principle.pdf" "Heisenberg Uncertainty Principle" 1580102759
-  "/Users/mac/Desktop/Programming/Notes/LaTeX/Heisenberg Uncertainty Principle/Heisenberg Uncertainty Principle.aux" 1580102758 2011 5372ad6c901b131272f293ab85993c39 ""
-  "/Users/mac/Desktop/Programming/Notes/LaTeX/Heisenberg Uncertainty Principle/Heisenberg Uncertainty Principle.tex" 1580102753 12083 014788babb3e32ce6229bfa5c5da14d7 ""
+  "Heisenberg Uncertainty Principle.blg"
+["pdflatex"] 1580276458 "/Users/mac/Desktop/Programming/Notes/LaTeX/Heisenberg Uncertainty Principle/Heisenberg Uncertainty Principle.tex" "/Users/mac/Desktop/Programming/Notes/LaTeX/Heisenberg Uncertainty Principle/Heisenberg Uncertainty Principle.pdf" "Heisenberg Uncertainty Principle" 1580276460
+  "/Users/mac/Desktop/Programming/Notes/LaTeX/Heisenberg Uncertainty Principle/Heisenberg Uncertainty Principle.aux" 1580276460 2011 5372ad6c901b131272f293ab85993c39 ""
+  "/Users/mac/Desktop/Programming/Notes/LaTeX/Heisenberg Uncertainty Principle/Heisenberg Uncertainty Principle.tex" 1580276458 12078 d9b4b840bb16b336ba3160006423570c ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -199,16 +199,16 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1570630629 4259636 b0098f01a38c4239beb89a8c2f6e4d87 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "Heisenberg Uncertainty Principle.aux" 1580102758 2011 5372ad6c901b131272f293ab85993c39 "pdflatex"
+  "Heisenberg Uncertainty Principle.aux" 1580276460 2011 5372ad6c901b131272f293ab85993c39 "pdflatex"
   "Heisenberg Uncertainty Principle.bbl" 1580102756 554 9f768db8404b8f7171a06478ab71a08a "bibtex Heisenberg Uncertainty Principle"
-  "Heisenberg Uncertainty Principle.out" 1580102758 597 4e6899c532626d6d0a8d3dfe92bcd368 "pdflatex"
-  "Heisenberg Uncertainty Principle.tex" 1580102753 12083 014788babb3e32ce6229bfa5c5da14d7 ""
-  "Heisenberg Uncertainty Principle.toc" 1580102758 772 a17373429a7e699a7a0ee2d329a18c9c "pdflatex"
+  "Heisenberg Uncertainty Principle.out" 1580276460 597 4e6899c532626d6d0a8d3dfe92bcd368 "pdflatex"
+  "Heisenberg Uncertainty Principle.tex" 1580276458 12078 d9b4b840bb16b336ba3160006423570c ""
+  "Heisenberg Uncertainty Principle.toc" 1580276460 772 a17373429a7e699a7a0ee2d329a18c9c "pdflatex"
   (generated)
-  "/Users/mac/Desktop/Programming/Notes/LaTeX/Heisenberg Uncertainty Principle/Heisenberg Uncertainty Principle.pdf"
-  "Heisenberg Uncertainty Principle.toc"
-  "/Users/mac/Desktop/Programming/Notes/LaTeX/Heisenberg Uncertainty Principle/Heisenberg Uncertainty Principle.log"
-  "Heisenberg Uncertainty Principle.log"
-  "Heisenberg Uncertainty Principle.pdf"
   "Heisenberg Uncertainty Principle.out"
+  "Heisenberg Uncertainty Principle.toc"
+  "Heisenberg Uncertainty Principle.pdf"
+  "/Users/mac/Desktop/Programming/Notes/LaTeX/Heisenberg Uncertainty Principle/Heisenberg Uncertainty Principle.log"
   "Heisenberg Uncertainty Principle.aux"
+  "/Users/mac/Desktop/Programming/Notes/LaTeX/Heisenberg Uncertainty Principle/Heisenberg Uncertainty Principle.pdf"
+  "Heisenberg Uncertainty Principle.log"
