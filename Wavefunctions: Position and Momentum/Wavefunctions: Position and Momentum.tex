@@ -1,0 +1,261 @@
+\documentclass[hidelinks, a4paper, 12pt]{article}
+\usepackage[linktoc=all]{hyperref}
+\usepackage{apacite}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\usepackage{tikz}
+\usepackage{pgf}
+\usepackage{mathrsfs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{braket}
+
+\allowdisplaybreaks
+
+
+\hypersetup{
+    pdftitle={Wavefunctions: Position and Momentum},
+    pdfauthor={Wilson Wongso},
+    pdfpagemode=UseOutlines,
+}
+
+\title{Wavefunctions: Position and Momentum}
+\author{Notes taken by Wilson Wongso}
+\date{}
+
+\setcounter{section}{-1}
+\setcounter{tocdepth}{2}
+
+\graphicspath{ {./images/} }
+
+\newcommand{\biimp}{\Leftrightarrow}
+\newcommand{\bd}{\textbf}
+\newcommand{\n}{\\[\baselineskip]}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\thus}{\Rightarrow}
+\newcommand{\xhat}{\hat{x}}
+\newcommand{\pxhat}{\hat{p}_x}
+
+\begin{document}
+
+    \maketitle
+        
+    \tableofcontents
+
+    \section{Preface}
+        The following notes are based on the lecture video \bd{Position and Momentum from Wavefunctions} \cite{QM-Position-Momentum}.
+        The author simply wishes to compile a part of his learning journey into this document.
+
+    \section{Position}
+        Suppose a particle is described by its wavefunction $\psi(x,t)$.\n
+        \scalebox{0.95}{
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines=middle,
+                xlabel=$x$, xlabel style={at=(current axis.right of origin), anchor=west},
+                ylabel=$\psi$, ylabel style={at=(current axis.above origin), anchor=south},
+                xtick=\empty, ytick=\empty,
+                clip=false,
+            ]
+            \addplot [
+                domain=0.5:3.1, 
+                samples=100, 
+                color=red,
+            ]
+            {sin(deg(x))};
+            \addplot +[mark=none, color=white, smooth] coordinates {(1.2, 0) (1.2, 0.93)};
+            \addplot +[mark=none, color=white, smooth] coordinates {(1.9, 0) (1.9, 0.9463)};
+            \node[label={0:{$\psi(x,t)$}},circle,inner sep=0pt] at (axis cs:2.4,0.7) {};
+            \end{axis}
+        \end{tikzpicture}}
+
+        \subsection{Probability of Finding the Position of a Particle}
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis lines=middle,
+                    xlabel=$x$, xlabel style={at=(current axis.right of origin), anchor=west},
+                    ylabel=$\psi$, ylabel style={at=(current axis.above origin), anchor=south},
+                    xtick=\empty, ytick=\empty,
+                    clip=false,
+                ]
+                \addplot [
+                    domain=0.5:3.1, 
+                    samples=100, 
+                    color=red,
+                ]
+                {sin(deg(x))};
+                \addplot +[mark=none, color=blue, smooth] coordinates {(1.2, 0) (1.2, 0.93)};
+                \addplot +[mark=none, color=blue, smooth] coordinates {(1.9, 0) (1.9, 0.9463)};
+                \node[label={150:{$a$}},circle,fill,inner sep=2pt] at (axis cs:1.2, 0) {};
+                \node[label={20:{$b$}},circle,fill,inner sep=2pt] at (axis cs:1.9, 0) {};
+                \end{axis}
+            \end{tikzpicture}\n
+            The probability that we will find the particle between two points $a$ and $b$, is given by the integral:
+            \[\int_a^b |\psi(x,t)|^2dx\]
+
+        \subsection{Expectation Value of the Position of a Particle}
+            While the expectation value of the position is given by the integral:
+            \begin{equation}
+                \braket{x} = \int_{-\infty}^{\infty} x|\psi(x,t)|^2dx
+            \end{equation}
+            What the expectation value represents is \bd{not} the mean value of position from taking several consecutive measurements of the particle.\n
+            This is because consecutive measurements would cause \bd{wavefunction collapse}, turning the wavefunction into a delta-function-like graph.\n
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis lines=middle,
+                    xlabel=$x$, xlabel style={at=(current axis.right of origin), anchor=west},
+                    ylabel=$\psi$, ylabel style={at=(current axis.above origin), anchor=south},
+                    xtick=\empty, ytick=\empty,
+                    clip=false,
+                ]
+                \addplot [
+                    domain=0.5:3.1, 
+                    samples=100, 
+                    color=white,
+                ]
+                {sin(deg(x))};
+                \addplot [
+                    domain=1.58:1.6, 
+                    samples=100, 
+                    color=red,
+                ]
+                {50*x-79};
+                \addplot [
+                    domain=1.6:1.62, 
+                    samples=100, 
+                    color=red,
+                ]
+                {-50*x+81};
+                \node[label={-90:{$x_1$}},circle,fill,inner sep=2pt] at (axis cs:1.6, 0) {};
+                \end{axis}
+            \end{tikzpicture}\n
+            Instead, the expectation value represents the mean value of position from single measurements of an infinite collection of \bd{identical} particles/wavefunctions/systems, at an exact same time.\n
+            Alternatively, we can measure one wavefunction, let the system \bd{recover from the collapse}, take the measurement again, repeat, and then finally take the mean of the position.\n
+            Both of these methods allow us to calculate the expectation value as:
+            \[\braket{x} = \frac{x_1 + x_2 + .. + x_n}{n}\]
+            where $n$ is the number of measurements we took.
+
+        \subsection{Position Operator}
+            Now we'd like to find the corresponding position operator $\xhat$, which would be a Hermitian Operator due to the $2^{nd}$ postulate of Quantum Mechanics.\n
+            Recall that the expectation value of the position $x$ can be related to its operator $\xhat$ and is defined by the following:
+            \begin{equation}
+                \braket{x} = \frac{\braket{\psi | \xhat | \psi}}{\braket{\psi | \psi}}
+            \end{equation}
+            We can then equate $(1)$ to $(2)$ since they both represent the expectation value of $x$:
+            \[\frac{\braket{\psi | \xhat | \psi}}{\braket{\psi | \psi}} = \int_{-\infty}^{\infty} x|\psi(x,t)|^2dx\]
+            Since the wavefunction is normalized, its inner product with itself is $1$:
+            \[\braket{\psi | \xhat | \psi} = \int_{-\infty}^{\infty} x|\psi(x,t)|^2dx\]
+            We also know that the magnitude squared of the wavefunction $|\psi|^2$ is just $\psi$ multiplied by its conjugate $\psi^*$. Substituting that and rearranging the right-hand side yields:
+            \[\braket{\psi | \xhat | \psi} = \int_{-\infty}^{\infty} \psi^* (x) \psi dx\]
+            From here, we can deduce that the operator $\xhat$ is simply given by its position $x$:
+            \[\xhat = x\]
+
+    \section{Momentum}
+        Similarly, the momentum of a particle can be represented by a Hermitian Operator $\pxhat$.\n
+        We can arrive at this operator by firstly finding the expectation value of its momentum, $\braket{p_x}$.
+
+        \subsection{Expectation Value of the Momentum of a Particle}
+            Surely enough, we can actually derive $\braket{p_x}$ using the expectation value of its position $\braket{x}$.\n
+            We begin by differentiating $\braket{x}$ with respect to time:
+            \[\begin{split}
+                \frac{d\braket{x}}{dt} &= \frac{d}{dt} \int_{-\infty}^{\infty} x|\psi(x,t)|^2dx\\
+                \\
+                &= \int_{-\infty}^{\infty} \frac{\partial}{\partial t} [x|\psi(x,t)|^2]dx\\
+                \\
+                &= \int_{-\infty}^{\infty} x \frac{\partial}{\partial t} [|\psi(x,t)|^2]dx\\
+                \\
+                &= \int_{-\infty}^{\infty} x \frac{\partial}{\partial t} (\psi^* \cdot \psi)dx\\
+            \end{split}\]
+            Recall that in the derivation of Schrödinger's Equation, we had already found an expression for $\frac{\partial}{\partial t}(\psi^* \cdot \psi)$, plugging that in yields:
+            \[\begin{split}
+                \frac{d\braket{x}}{dt} &= \int_{-\infty}^{\infty} x \left[\psi^* \left(\frac{i\hbar}{2m} \frac{\partial^2 \psi}{\partial x^2}\right) - \psi \left(\frac{i\hbar}{2m} \frac{\partial^2 \psi^*}{\partial x^2}\right)\right] dx\\
+                \\
+                &= \frac{i\hbar}{2m} \int_{-\infty}^{\infty} x \left[\psi^* \frac{\partial^2 \psi}{\partial x^2} - \psi \frac{\partial^2 \psi^*}{\partial x^2}\right] dx\\
+                \\
+                &= \frac{i\hbar}{2m} \int_{-\infty}^{\infty} x \frac{\partial}{\partial x} \left(\psi^* \frac{\partial \psi}{\partial x} - \psi \frac{\partial \psi^*}{\partial x}\right) dx\\
+            \end{split}\]
+            Next, we're going to utilize integration by parts. If we let $u = x$:
+            \[\begin{split}
+                u &= x\\
+                du &= \frac{\partial x}{\partial x}\\
+                du &= 1
+            \end{split}\]
+            and $dv = \frac{\partial}{\partial x} \left(\psi^* \frac{\partial \psi}{\partial x} - \psi \frac{\partial \psi^*}{\partial x}\right)$:
+            \[\begin{split}
+                dv &= \frac{\partial}{\partial x} \left(\psi^* \frac{\partial \psi}{\partial x} - \psi \frac{\partial \psi^*}{\partial x}\right)\\
+                \\
+                v &= \int_{-\infty}^{\infty} \frac{\partial}{\partial x} \left(\psi^* \frac{\partial \psi}{\partial x} - \psi \frac{\partial \psi^*}{\partial x}\right) dx\\
+                \\
+                v &= \psi^* \frac{\partial \psi}{\partial x} - \psi \frac{\partial \psi^*}{\partial x}
+            \end{split}\]
+            Plugging these expressions back to our original integral:
+            \[\begin{split}
+                \frac{d\braket{x}}{dt} &= \frac{i\hbar}{2m} \left[\left. x \left( \psi^* \frac{\partial \psi}{\partial x} - \psi \frac{\partial \psi^*}{\partial x} \right) \right\rvert_{-\infty}^{\infty} - \int_{-\infty}^{\infty} \left( \psi^* \frac{\partial \psi}{\partial x} - \psi \frac{\partial \psi^*}{\partial x} \right)dx \right]
+            \end{split}\]
+            Because of normalization condition, $\left. \left( \psi^* \frac{\partial \psi}{\partial x} - \psi \frac{\partial \psi^*}{\partial x} \right) \right\rvert_{-\infty}^{\infty}$ tends to zero, thus:
+            \[\begin{split}
+                \frac{d\braket{x}}{dt} &= -\frac{i\hbar}{2m} \int_{-\infty}^{\infty} \left( \psi^* \frac{\partial \psi}{\partial x} - \psi \frac{\partial \psi^*}{\partial x} \right)dx
+            \end{split}\]
+            We are going to utilize integration by parts one more time, but only on the right half of the integral:
+            \[\begin{split}
+                \int_{-\infty}^{\infty} \psi \frac{\partial \psi^*}{\partial x} dx &= \left. \psi (\psi^*) \right\rvert_{-\infty}^{\infty} - \int_{-\infty}^{\infty} \psi^* \frac{\partial \psi}{\partial x} dx
+            \end{split}\]
+            Again, because of the normalization condition, both $\psi$ and $\psi^*$ tends to zero as $x$ approaches $\pm \infty$. Therefore we are left with:
+            \[\begin{split}
+                \int_{-\infty}^{\infty} \psi \frac{\partial \psi^*}{\partial x} dx &= - \int_{-\infty}^{\infty} \psi^* \frac{\partial \psi}{\partial x} dx
+            \end{split}\]
+            Plugging it to the original integral:
+            \[\begin{split}
+                \frac{d\braket{x}}{dt} &= -\frac{i\hbar}{2m} \int_{-\infty}^{\infty} \left[ \psi^* \frac{\partial \psi}{\partial x} - \left(- \psi^* \frac{\partial \psi}{\partial x}\right) \right]dx\\
+                \\
+                &= -\frac{i\hbar}{2m} \int_{-\infty}^{\infty} 2 \cdot \psi^* \frac{\partial \psi}{\partial x} dx\\
+            \end{split}\]
+            The $2$s cancels each other, and we are left with
+            \begin{equation}
+                \frac{d\braket{x}}{dt} = -\frac{i\hbar}{m} \int_{-\infty}^{\infty} \psi^* \frac{\partial \psi}{\partial x} dx
+            \end{equation}
+            Now, to move forward, we know the postulate that the derivative of the expectation value $\braket{x}$ with respect to time is just the expectation value of the velocity operator $v_x$:
+            \[\braket{v_x} = \frac{d\braket{x}}{dt}\]
+            And the expectation value of the momentum operator $\braket{p_x}$ can be related to $\braket{v_x}$ by:
+            \[\braket{p_x} = m \braket{v_x}\]
+            Substituting $\braket{v_x}$ with the derivative in $(3)$:
+            \[\begin{split}
+                \braket{p_x} &= m \left(-\frac{i\hbar}{m} \int_{-\infty}^{\infty} \psi^* \frac{\partial \psi}{\partial x} dx \right)\\
+                \\
+                &= -i\hbar \int_{-\infty}^{\infty} \psi^* \frac{\partial \psi}{\partial x} dx\\
+            \end{split}\]
+            Changing the constants in front of the integral into its fraction form yields:
+            \begin{equation}
+                \braket{p_x} = \frac{\hbar}{i} \int_{-\infty}^{\infty} \psi^* \frac{\partial \psi}{\partial x} dx
+            \end{equation}
+
+        \subsection{Momentum Operator}
+            Similar to finding the position operator, we can start by first representing $\braket{p_x}$ in terms of the operator $\pxhat$:
+            \begin{equation}
+                \braket{p_x} = \frac{\braket{\psi | \pxhat | \psi}}{\braket{\psi | \psi}}
+            \end{equation}
+            Then equate $(4)$ to $(5)$ since they both are equivalent to $\braket{p_x}$:
+            \[\frac{\braket{\psi | \pxhat | \psi}}{\braket{\psi | \psi}} = \frac{\hbar}{i} \int_{-\infty}^{\infty} \psi^* \frac{\partial \psi}{\partial x} dx\]
+            The denominator of the left hand side is just $1$, and rearranging the right-hand side yields:
+            \[\begin{split}
+                \braket{\psi | \pxhat | \psi} &= \int_{-\infty}^{\infty} \psi^* \left(\frac{\hbar}{i} \frac{\partial}{\partial x}\right)\psi dx
+            \end{split}\]
+            From which we can finally deduce the momentum operator $\pxhat$ as:
+            \[\pxhat = \frac{\hbar}{i} \frac{\partial}{\partial x}\]
+
+    \section{Importance of Position and Momentum Operators}
+        Almost all Classical Mechanics quantities can be expressed in terms of position and momentum.\n
+        For instance the Kinetic Energy:
+        \[E_k = \frac{1}{2}mv^2 = \frac{p^2}{2m}\]
+        and others like the Potential Energy, Angular Momentum, etc.\n
+        In general we can find the expectation value of almost any Classical Mechanics quantity $Q$ by using the operators $\xhat$ and $\pxhat$:
+        \[\braket{Q(x,p)} = \int_{-\infty}^{\infty} \psi^* Q(\xhat, \pxhat) \psi dx\]
+    \bibliographystyle{apacite}
+    \bibliography{References}
+
+\end{document}

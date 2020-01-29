@@ -1,0 +1,26 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Khan%
+}{%
+Khan%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+QM-Position-Momentum}
+\APACinsertmetastar {%
+QM-Position-Momentum}%
+\begin{APACrefauthors}%
+Khan.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {Position and Momentum from Wavefunctions | Quantum Mechanics.}
+  {Position and momentum from wavefunctions | quantum mechanics.}
+\newblock
+\begin{APACrefURL} \url{https://youtu.be/Egu4i8umpoM} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
